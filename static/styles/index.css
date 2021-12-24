@@ -1,14 +1,63 @@
 body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Spline Sans', serif;
 }
 
+nav{
+	background-color: #B67171;
+}
+
+/* section's backgorund color */
+
+#about-me{
+	background-color: #6998AB;
+}
+#skills{
+	background-color: #fbf1c7;
+}
+
+#projects, #contacts{
+	background-color:#eeeeee;
+}
+
+/* End of sections background color */
+
+a:hover{
+	cursor: pointer;
+}
+h2{
+	font-family: 'PlayFair Display', serif;
+	text-align: center;
+}
+
+img {
+	/* So that no image is overflown */
+	width: 100%;
+}
+
+.description{
+	margin-top: 1rem
+}
+
+#about-me .container-fluid{
+	margin-left: 1rem;
+}
+
+
+.description p, .project-desc{
+	text-align: center;
+	font-size: 1.4rem;
+	line-height: 1.5;;
+}
 .pictures{
 	width: 30%;
 	margin: 1rem;
 }
 .picture img{
-	width: 100%
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
 }
 
 .skill-images{
@@ -24,24 +73,48 @@ body{
 	text-align: center;
 }
 
-.skill img{
+.skill img, .contact img{
 	width: 150px;
 }
 
+#project1-info, #project2-info{
+	display: none;
+}
+
+.project-title {
+	margin-left: 1rem;
+	padding: 1rem
+}
+
+.project-desc{
+	padding: 2rem;
+}
 .contact{
-	width: 800px;
+	width: 80%;
 	margin: 0 auto
 }
 
- .contact-link{
+.contact-link{
 	display: inline-block;
 	margin-left: 5rem;
 }
 
+@media (max-width: 950px){
+.pictures{
+		width: 50%;
+		margin: 2rem auto;
+	}
+}
 
 @media (max-width: 500px){
-	.skill{
+	.skill, .contact{
 		display: block;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.skill img{
+		width: 100px;
 		margin: 0 auto;
 	}
 }

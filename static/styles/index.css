@@ -76,10 +76,15 @@ img {
 }
 
 .skill img, .contact img{
-		width: 130px;
-		margin: 0 auto;
+	width: 130px;
+	margin: 0 auto;
+	padding-right: 0.3rem;
+	padding-left: 0.3rem;
 }
 
+#contacts .container-fluid{
+	width: 50%;
+}
 #project1-info, #project2-info{
 	display: none;
 }
@@ -96,10 +101,6 @@ img {
 .contact{
 	display: inline-block;
 	margin-left: 5rem;
-}
-
-a img{
-	margin: 1rem;
 }
 
 @media (max-width: 950px){
@@ -121,13 +122,6 @@ a img{
 		line-height: 1.2;
 	}
 
-	.picture img{
-		width: 250px;
-		height: 250px;
-		border-radius: 50%;
-	}
-
-
 	.skill p{
 		padding-bottom: 2 rem
 	}
@@ -141,5 +135,6 @@ a img{
 		display: block;
 		width: 70px;
 		margin: 0 auto;
+		padding: 0.3rem;
 	}
 }

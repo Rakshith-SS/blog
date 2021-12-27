@@ -11,7 +11,7 @@ nav{
 /* section's backgorund color */
 
 #about-me{
-	background-color: #6998AB;
+	background-color: #fbf1c7;
 }
 #skills{
 	background-color: #fbf1c7;
@@ -44,25 +44,27 @@ img {
 	margin-left: 1rem;
 }
 
-
 .description p, .project-desc{
 	text-align: center;
 	font-size: 1.4rem;
 	line-height: 1.5;;
 }
+
 .pictures{
 	width: 30%;
 	margin: 1rem;
 }
+
 .picture img{
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 }
 
-.skill-images{
-	margin: auto;
+.skill-images, .contact{
+	margin:0 auto;
 	width: 80%;
+	padding: 2rem;
 }
 .skill{
 	display: inline-block;
@@ -74,7 +76,8 @@ img {
 }
 
 .skill img, .contact img{
-	width: 150px;
+		width: 130px;
+		margin: 0 auto;
 }
 
 #project1-info, #project2-info{
@@ -89,32 +92,54 @@ img {
 .project-desc{
 	padding: 2rem;
 }
-.contact{
-	width: 80%;
-	margin: 0 auto
-}
 
-.contact-link{
+.contact{
 	display: inline-block;
 	margin-left: 5rem;
 }
 
+a img{
+	margin: 1rem;
+}
+
 @media (max-width: 950px){
-.pictures{
+	.pictures{
 		width: 50%;
 		margin: 2rem auto;
 	}
+	.skill img, .contact img{
+		width: 100px;
+		margin: 0 auto;
+	}
+
 }
 
 @media (max-width: 500px){
+	.description p, .project-desc{
+		text-align: center;
+		font-size: 1rem;
+		line-height: 1.2;
+	}
+
+	.picture img{
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+	}
+
+
+	.skill p{
+		padding-bottom: 2 rem
+	}
+
 	.skill, .contact{
 		display: block;
 		width: 80%;
 		margin: 0 auto;
 	}
-
-	.skill img{
-		width: 100px;
+	.skill img, .contact img{
+		display: block;
+		width: 70px;
 		margin: 0 auto;
 	}
 }
